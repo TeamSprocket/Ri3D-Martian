@@ -22,8 +22,8 @@ public class Drivetrain extends Subsystem {
 			setLeft((OI.BUTTON_slowLeft.get() ? .85 : 1) * -speed);
 			setRight((OI.BUTTON_slowRight.get() ? .85 : 1) * -speed);
 		} else {
-			setLeft(turnAngle);
-			setRight(-turnAngle);
+			setLeft(-turnAngle);
+			setRight(turnAngle);
 		}
 	}
 
